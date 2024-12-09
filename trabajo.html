@@ -54,7 +54,7 @@
                      <h6>0986904336</h6>
                 </div>
                 <footer>
-                    <p class="card">La informática es una ciencia interdisciplinaria que se ocupa de la teoría, el diseño, la implementación y la aplicación de sistemas informáticos.</p>
+                    <p class="cardsd">La informática es una ciencia interdisciplinaria que se ocupa de la teoría, el diseño, la implementación y la aplicación de sistemas informáticos.</p>
                 </footer>
                 <br>
                 <div class="card-footer text-center bg-Light">
@@ -64,9 +64,9 @@
                     <a class="btn btn-danger" href="https://www.youtube.com">You Tube</a>
                 </div>
                 <div class="text-center mt-3">
-                    <button class="btn btn-primary" onclick="showMessage">Aceptar</button>
+                    <button class="btn btn-primary" onclick="showMessage()">Aceptar</button>
                     <button class="btn btn-warning" onclick="window.location.href='index.html';">Regresar</button>
-                    <button class="btn btn-warning" onclick="Cambiarcontenido">Cambiar contenido</button>
+                    <button class="btn btn-warning" onclick="Cambiarcontenido()">Cambiar contenido</button>
                 </div>
             </div>
         </main>
@@ -79,8 +79,8 @@
             alert("Has presionado");
         }
         function Cambiarcontenido(){
-            const texto = document.querySelector(".card");
-            texto.textContent= "Nuevo contenido JS";
+            const texto = document.querySelector(".cardsd");
+            texto.textContent= "Nuevo contenido realizado en JS";
         }
     </script>
 </body>
