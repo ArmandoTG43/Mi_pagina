@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semaforo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+       <div class="semaforo">
+        <span class="luz-circulo red" id="color1"></span>
+        <span class="luz-circulo yellow" id="color2"></span>
+        <span class="luz-circulo green" id="color3"></span>
+       </div> 
+    </div>
+    <div class="Buton">
+        <button class="rojo" onclick="CambiarColor('color1', 'red','color2','color3' )" >RED</button>
+        <button class="ama" onclick="CambiarColor('color2', 'yellow','color1','color3' )"> YELLOW</button>
+        <button class="ver" onclick="CambiarColor('color3', 'green','color2','color1' )"> GREEN</button>
+    </div>
+    <script>
+        
+        function CambiarColor(idelemento, color,idotroelemto,idotroelem ){
+            const div = document.getElementById(idelemento);
+            div.style.backgroundColor=color
+            const div2= document.getElementById(idotroelemto);
+            div2.style.backgroundColor="white"
+            const div3= document.getElementById(idotroelem);
+            div3.style.backgroundColor="white"
+        }
+    </script>
+
+
+</body>
+</html>

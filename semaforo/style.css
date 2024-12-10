@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:  border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: url(Kin.jpg) no-repeat;
+    background-size: cover;
+}
+.container{
+    display: grid;
+    place-items: center;
+}
+.semaforo{
+   width: 100px;
+   height: 200px;
+   border-radius: 30px;
+   display: grid;
+   place-items: center;
+   background-color: #2c3e50;
+   padding: 10px;
+}
+.luz-circulo{
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius:  50%;
+    background-color: rgb(0,0,0,0.3);
+}
+.luz-circulo::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-right: 4px solid  rgb(255,255,255,0.6);
+}
+.red{
+    background-color: #c0392b;
+    box-shadow: 0 0 10px 1px #c0392b;
+}
+.yellow{
+    background-color: #f6ef25;
+    box-shadow: 0 0 10px 1px #f6ef25;
+}
+.green{
+    background-color: #2bd065;
+    box-shadow: 0 0 10px 1px #2bd065;
+}
+.rojo{
+    color: rgb(246, 16, 16);
+    font-size: 20px;
+    padding: 10px 5px;
+    border-radius:  100%;
+}
+.ama{
+    color: rgb(242, 235, 44);
+    font-size: 20px;
+    padding: 10px 5px;
+    border-radius:  100%;
+}
+.ver{
+    color: rgb(33, 221, 89);
+    font-size: 20px;
+    padding: 10px 5px;
+    border-radius:  100%;
+}
