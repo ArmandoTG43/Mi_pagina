@@ -17,6 +17,20 @@
                 <img src="img1.jpeg" width="180" alt="" class="box-img">
             </center>
             <br>
+            <div class="row">
+                <div class="col-md-4" id="color1">
+                    <p>Puerba1</p>
+    
+                </div>
+                <div class="col-md-4" id="color2">
+                    <p>Puerba2</p>
+    
+                </div>
+            <br>
+            </div>
+            <button class="btn btn-primary" onclick="CambiarColor('color1', 'blue','color2' )"> Cambiar Color 1</button>
+            <button class="btn btn-danger" onclick="CambiarColor('color2', 'red','color1')"> Cambiar Color 2</button>
+            <br>
             <div class="card">
                 <div class="bg-success card-header text-center">
                     <h2 class="card-title">Sistemas de Información </h2>
@@ -80,7 +94,13 @@
         }
         function Cambiarcontenido(){
             const texto = document.querySelector(".cardsd");
-            texto.textContent= "Nuevo contenido realizado en JS";
+            texto.textContent= "Nuevo contenido JS";
+        }
+        function CambiarColor(idelemento, color,idotroelemto){
+            const div = document.getElementById(idelemento);
+            div.style.backgroundColor=color
+            const div2= document.getElementById(idotroelemto);
+            div2.style.backgroundColor="white"
         }
     </script>
 </body>
